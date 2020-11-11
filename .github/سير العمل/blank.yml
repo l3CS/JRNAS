@@ -1,0 +1,13 @@
+VAGRANTFILE_API_VERSION  =  "2"
+المتشرد . تكوين ( VAGRANTFILE_API_VERSION )  يفعل | التكوين |
+    التكوين . vm . المربع  =  "ubuntu / trusty64"
+
+    التكوين . vm . synced_folder  " فاجرانت -سولت /" ،  "/ srv / ملح /"
+    التكوين . vm . توفير  :  هل الملح | ملح |
+        saltCnf . مطول  =  صحيح
+        saltCnf . minion_config  =  './vagrant-salt/minion'
+        saltCnf . run_highstate  =  صحيح
+        saltCnf . bootstrap_options  =  '-D'
+        saltCnf . temp_config_dir  =  '/ tmp'
+    النهاية
+النهاية
